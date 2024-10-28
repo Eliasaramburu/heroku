@@ -1,0 +1,66 @@
+<!-- templates/clientes.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Cadastrados</title>
+    <style>
+        body {
+            background-color: #ffffff; /* Fundo branco */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh; /* Ocupa toda a altura da janela */
+            margin: 0;
+        }
+        h1 {
+            color: #3f51b5; /* Azul para o título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+        .container {
+            background-color: #e3f2fd; /* Azul claro para o contêiner */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 400px; /* Largura do contêiner */
+            text-align: left; /* Alinhamento à esquerda para texto */
+        }
+        ul {
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0; /* Remove o padding da lista */
+        }
+        li {
+            background-color: #ffffff; /* Fundo branco para os itens */
+            margin: 10px 0; /* Espaço entre os itens */
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #3f51b5; /* Azul para o link */
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Clientes Cadastrados</h1>
+    <div class="container">
+        <ul>
+            {% for cliente in clientes %}
+                <li>{{ cliente }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href="/home">Voltar para o Cadastro</a>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+# class Usuario:
+#
+#     def __init__(self,nome, idade, altura, cargo, matricula):
+#         self.nome = nome
+#         self.altura = altura
+#         self.cargo = cargo
+#         self.matricula = matricula
+#
+#     def mostrar_nome(self):
+#         print(self.nome)
+#
+#     def mostrar_altura(self):
+#         print(self.altura)
+#
+#
+#     def exibe_cargo(self):
+#         print(self.cargo)
+#
+#     def exibe_matricula(self):
+#         print(self.matricula)
+#
+#
+#
+# usuario1 = Usuario('Marcos', "21", "1.72", "gerente", "115140")
+#
+# usuario2 = Usuario("marcos", "31", "1.80", "estagiário","115250")
+#
+# usuario1.mostrar_nome(), usuario1.mostrar_altura(), usuario1.exibe_cargo(),usuario1.exibe_matricula()
+
+
+
